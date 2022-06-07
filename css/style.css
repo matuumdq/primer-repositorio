@@ -17,6 +17,11 @@
     animation-duration: 8s;
 }
 
+.parrafo1 button:hover {
+    transform: scale(1.5);
+    transition: 1s;
+}
+
 .parrafo2 button {
     transform: rotate(180deg);
 }
