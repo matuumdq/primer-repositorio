@@ -1,5 +1,6 @@
 .texto-centrado {
     max-width: 550px;
+    height: 150px;
     margin: 0 auto;
     text-align: center;
     background-color: bisque;
@@ -8,4 +9,85 @@
 .h2 {
     font-family: sans-serif;
     color: red;
+}
+
+.parrafo1 {
+    animation-name: gradiente;
+    animation-iteration-count: infinite;
+    animation-duration: 8s;
+}
+
+.parrafo2 button {
+    transform: rotate(180deg);
+}
+
+.parrafo2 button:hover {
+    transform: rotate(0deg);
+    transform: scale(1.5);
+    transition: 1s;
+}
+
+.parrafo3 {
+    width: 300px;
+    height: 150px;
+}
+
+.parrafo3:hover {
+    width: 550px;
+    height: 300px;
+    transform: skew(20deg);
+    transition: 3s;
+
+}
+
+.parrafo4 button {
+    animation-name: giro;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+}
+
+.parrafo4 button:hover {
+    animation-play-state: paused;
+}
+
+
+
+@keyframes gradiente {
+    0% {
+        background-color: greenyellow;
+    }
+
+    30% {
+        background-color: lightcoral;
+    }
+
+    68% {
+        background-color: violet;
+    }
+
+    100% {
+        background-color: turquoise;
+    }
+}
+
+@keyframes giro {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(90deg);
+    }
+
+    50% {
+        transform: rotate(180deg);
+    }
+
+    75% {
+        transform: rotate(270deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
